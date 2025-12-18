@@ -8,22 +8,22 @@ import hero3 from "@/assets/hero-3.jpg";
 const slides = [
   {
     image: hero1,
-    title: "Precision",
-    subtitle: "Manufacturing",
+    title: "PRECISION",
+    subtitle: "MANUFACTURING",
     description: "State-of-the-art CNC machining and fabrication",
   },
   {
     image: hero2,
-    title: "Structural",
-    subtitle: "Engineering",
+    title: "STRUCTURAL",
+    subtitle: "ENGINEERING",
     description: "Building bridges that connect communities",
   },
-  {
+  /*{
     image: hero3,
     title: "Modern",
     subtitle: "Architecture",
     description: "Innovative designs for the future",
-  },
+  },*/
 ];
 
 const HeroSlider = () => {
