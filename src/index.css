@@ -78,16 +78,27 @@
     font-family: 'Inter', sans-serif;
   }
 
-  h1, h2, h3, .display {
+  h1,
+  h2,
+  h3,
+  .display {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.02em;
   }
 }
 
+/*CLAMP USED FOR FRONT PAGE SIZE ADJ*/
 @layer components {
   .hero-title {
     font-family: 'Bebas Neue', sans-serif;
-    @apply text-6xl md:text-8xl lg:text-[10rem] xl:text-[12rem] leading-none tracking-tight text-foreground;
+    @apply leading-none tracking-tight text-foreground;
+    font-size: clamp(3.5rem, 12vw, 12rem);
+  }
+
+  .hero-subtitle {
+    font-family: 'Bebas Neue', sans-serif;
+    @apply leading-none tracking-tight text-primary block;
+    font-size: clamp(2rem, 6vw, 6rem);
   }
 
   .nav-link {
@@ -112,11 +123,9 @@
   }
 
   .overlay-dark {
-    background: linear-gradient(
-      to bottom,
-      hsl(var(--hero-overlay) / 0.3) 0%,
-      hsl(var(--hero-overlay) / 0.6) 100%
-    );
+    background: linear-gradient(to bottom,
+        hsl(var(--hero-overlay) / 0.3) 0%,
+        hsl(var(--hero-overlay) / 0.6) 100%);
   }
 
   .slide-indicator {

@@ -57,9 +57,8 @@ const HeroSlider = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
         >
           <img
             src={slide.image}
@@ -79,7 +78,8 @@ const HeroSlider = () => {
           >
             {slides[currentSlide].title}
             <br />
-            <span className="text-primary">{slides[currentSlide].subtitle}</span>
+            <br />
+            <span className="hero-subtitle">{slides[currentSlide].subtitle}</span>
           </h1>
           <p
             className="mt-6 text-lg md:text-xl text-foreground/80 max-w-xl mx-auto animate-fade-in animation-delay-200"
